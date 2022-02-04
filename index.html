@@ -63,7 +63,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="advantages section">
@@ -118,25 +118,31 @@
           <h2 class="works-title">Чем мы занимаемся</h2>
           <ul class="works-list">
             <li class="works-item">
+              <div class="works-thumb">
               <img
                 src="./images/picture1.jpg"
                 alt="Компьютер, на котором набран код"
                 width="370"
-              />
-            </li>
+              /> 
+              <p class="works-text">Десктопные приложения</p>
+          </div></li>
+            
+          
             <li class="works-item">
-              <img
+              <div class="works-thumb"><img
                 src="./images/picture2.jpg"
                 alt="на экране изображены мобильные приложения"
                 width="370"
               />
-            </li>
+              <p class="works-text">Мобильные приложения</p>
+</div></li>
             <li class="works-item">
-              <img
+              <div class="works-thumb"><img
                 src="./images/picture3.jpg"
                 alt="планшет с цветным квадратом"
                 width="370"
               />
+              <p class="works-text">Дизайнерские решения</p></div>
             </li>
           </ul>
         </div>
@@ -326,5 +332,10 @@
                 </ul></div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal > <div class="modal">
+      <button type="button" class="modal-close-button" data-modal-close > <svg class="icon-close" width="11" height="11">
+                <use href="./images/icons.svg#icon-dagger"></use></button>
+    </div> </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
