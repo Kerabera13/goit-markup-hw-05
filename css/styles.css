@@ -716,7 +716,7 @@ address {
 }
 
 .backdrop.is-hidden .modal {
-  transform: rotate(-250deg) scale(2);
+  transform: rotate(180deg) scale(3);
 }
 .modal-close-button {
   width: 30px;
