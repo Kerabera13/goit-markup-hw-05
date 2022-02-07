@@ -77,10 +77,9 @@ img {
 
 /* -------header--------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
+
 .logo {
   margin-right: 93px;
 }
@@ -106,6 +105,8 @@ img {
   margin-left: 40px;
 }
 .header-link {
+  display: block;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -145,7 +146,7 @@ img {
   border-radius: 2px;
   position: absolute;
   left: 0px;
-  bottom: 1px;
+  bottom: -1px;
 }
 
 .contact-item {
@@ -222,6 +223,7 @@ img {
   padding-right: 32px;
   padding-left: 32px;
 
+  border: transparent;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -318,17 +320,18 @@ img {
   position: relative;
 }
 .works-text {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   bottom: 0;
   left: 0;
 
-  padding-top: 27px;
-  padding-bottom: 27px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--additional-color);
